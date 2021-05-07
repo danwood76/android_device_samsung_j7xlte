@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/samsung/a3xelte
+LOCAL_PATH := device/samsung/j7xlte
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
@@ -26,8 +26,8 @@ PRODUCT_COPY_FILES += \
 # Boot animation
 TARGET_BOOTANIMATION_PRELOAD := true
 TARGET_BOOTANIMATION_TEXTURE_CACHE := true
-TARGET_SCREEN_HEIGHT := 1080
-TARGET_SCREEN_WIDTH := 720
+TARGET_SCREEN_HEIGHT := 1920
+TARGET_SCREEN_WIDTH := 1080
 
 # Bluetooth
 PRODUCT_COPY_FILES += \
@@ -121,9 +121,9 @@ PRODUCT_COPY_FILES += \
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
-# Vendor security patch level (vendor blobs from A310FXXU5CSI1)
+# Vendor security patch level (vendor blobs from J710FNDDS1BSG1)
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.lineage.build.vendor_security_patch=2019-08-01
+    ro.lineage.build.vendor_security_patch=2019-07-01
 
 # Wi-fi
 PRODUCT_COPY_FILES += \
@@ -139,4 +139,4 @@ PRODUCT_COPY_FILES += \
 $(call inherit-product, device/samsung/universal7580-common/device-common.mk)
 
 # Call the proprietary setup
-$(call inherit-product, vendor/samsung/a3xelte/a3xelte-vendor.mk)
+$(call inherit-product, vendor/samsung/j7xlte/j7xlte-vendor.mk)

@@ -1,14 +1,4 @@
 on boot
-    # Update cpusets now that processors are up
-    write /dev/cpuset/foreground/cpus 0-3
-    write /dev/cpuset/foreground/mems 0-3
-    write /dev/cpuset/background/cpus 0
-    write /dev/cpuset/background/mems 0
-    write /dev/cpuset/system-background/cpus 0-1
-    write /dev/cpuset/system-background/mems 0-1
-    write /dev/cpuset/top-app/cpus 0-3
-    write /dev/cpuset/top-app/mems 0-3
-
     # Assign TCP buffer thresholds to be ceiling value of technology maximums
     # Increased technology maximums should be reflected here.
     write /proc/sys/net/core/rmem_max 2097152
