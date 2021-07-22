@@ -63,7 +63,8 @@ etc/wifi/nvram_net.txt:vendor/etc/wifi/nvram_net.txt
 vendor/firmware/ram_patch.fw
 
 # NFC
-vendor/firmware/libpn548ad_fw.so:vendor/lib/libpn548ad_fw.so
+vendor/firmware/libpn548ad_fw.so
+lib/hw/nfc_nci.universal7580.so
 
 # cbd, from boot.img and pinned to stop removal when extracting from system image
 bin/cbd:vendor/bin/cbd|1b3ec965475829467a09e86a7103bc4086e66194
