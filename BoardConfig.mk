@@ -52,6 +52,9 @@ TARGET_KERNEL_CONFIG := lineageos_j7xlte_defconfig
 # Manifest
 DEVICE_MANIFEST_FILE := $(LOCAL_PATH)/manifest.xml
 
+# SELinux
+BOARD_SEPOLICY_DIRS += device/samsung/j7xlte/sepolicy 
+
 # Shim
 TARGET_LD_SHIM_LIBS += \
     /system/lib/libcamera_client.so|/vendor/lib/libcamera_client_shim.so \

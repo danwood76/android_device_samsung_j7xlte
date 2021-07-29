@@ -1,0 +1,8 @@
+# ON8 power devices
+genfscon sysfs /devices/battery.39/power_supply                                     u:object_r:sysfs_usb_supply:s0
+genfscon sysfs /devices/i2c.38/i2c-5/5-003b/power_supply/s2mu005-fuelgauge          u:object_r:sysfs_usb_supply:s0
+genfscon sysfs /devices/13890000.hsi2c/i2c-2/2-003d/s2mu005-charger/power_supply    u:object_r:sysfs_usb_supply:s0
+
+# ON8 Input devices
+genfscon sysfs /devices/13850000.i2c/i2c-9/9-0048/input/input2              u:object_r:sysfs_input:s0
+genfscon sysfs /devices/i2c.20/i2c-4/4-0020/input/input1                    u:object_r:sysfs_input:s0
